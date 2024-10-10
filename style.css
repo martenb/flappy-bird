@@ -51,6 +51,15 @@ body {
     z-index: +1;
 }
 
+.score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    z-index: +3;
+}
+
 .bird {
     background-image: url('flappy-bird.png');
     position: absolute;
