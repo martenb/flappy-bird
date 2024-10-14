@@ -31,11 +31,13 @@ document.addEventListener('DOMContentLoaded' , () => {
     }
 
     function controlEnd(e) {
-        if (e.keyCode === 32 && e.ctrlKey) {
+        if (e.keyCode === 32 && e.altKey) {
             restart()
             document.removeEventListener('keyup', controlEnd)
         }
     }
+
+    document.querySelector('.restart-btn').addEventListener('click', restart);
 
     function control(e) {
         if (e.keyCode === 32) {
@@ -136,7 +138,7 @@ document.addEventListener('DOMContentLoaded' , () => {
       setInterval(() => {
         const finalScore = document.querySelector('.game-over-score')
         finalScore.innerHTML = finalPoints
-      }, 100)
+      }, 200)
       document.body.classList.add('game--end')
       document.addEventListener('keyup', controlEnd)
     }
