@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Flappy Bird</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <title>POSMIO Pták</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" charset="utf-8"></script>
   </head>
-  <body>
-
-  <div class="border-left"></div>
-  <div class="game-container">
-      <div class="border-top"></div>
-      <div class="sky">
+  <body class="game--start">
+    <div class="body-container">
+      <div class="border-left"></div>
+      <div class="game-container">
+        <div class="border-top"></div>
+        <div class="sky">
           <div class="score">0</div>
-          <div class="bird"></div>
-      </div>
-  </div>
-  <div class="ground-container">
-    <div class="ground-moving"></div>
-  </div>
-  <div class="border-right"></div>
+          <div class="bird"><img src="./wings.png" /></div>
+        </div>
 
+        <div class="game-popup-container game-popup--start">
+          <div class="game-popup text-center">
+            <div>POSMIO ptáka ovládej mezerníkem.</div>
+            <div style="margin-top: 24px">Stistkni mezerník a&nbsp;leť!</div>
+          </div>
+        </div>
+        <div class="game-popup-container game-popup--end">
+          <div class="game-popup">
+            <div class="game-over-text">Game Over</div>
+            <div class="game-over-text" style="margin-top: 24px">
+              Score: <span class="game-over-score">0</span>
+            </div>
+            <div style="margin-top: 24px" class="text-center">
+              <div>
+                Pro účast v soutěži udělej screenshot a zašli ho na
+                <a href="mailto:inspirad@adbros.cz">inspirad@adbros.cz</a>.
+              </div>
+            </div>
+            <div style="margin-top: 24px">
+              <div class="text-center">
+                Restartuj hru stisknutím control a mezerníku.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ground-container">
+        <div class="ground"></div>
+      </div>
+      <div class="border-right"></div>
+    </div>
   </body>
 </html>
